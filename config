@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "rke2-imported-1"
+  cluster:
+    server: "https://nnit-rancher-nginxlb.nnitcorp.com/k8s/clusters/c-m-l6dz977p"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2akNDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      FkzT0RjdwpNRE0xTmpBZUZ3MHlNekF6TVRNd09UTTVNVFphRncwek16QXpNVEF3T1RNNU1UWmFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE5qYzROekF3TXpVMk1Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRURYdUxKU0FoamdweApHck9udzRZL3VTQnF6dGlweS91UGs0WWtXN\
+      zErL1lWUk45RXYvUldQT0YraGVScWtvdkt4Y2JQVXQzU05VZ1dXCjlHZjhsUEdxejZOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGT\
+      lhrNDdGRGkrTmsvMHJPU2dEQkNqVmI3MEFZTUFvR0NDcUdTTTQ5QkFNQ0Ewa0FNRVlDSVFDSQpQL\
+      21CNUFQWW1wV0VNREl4V21XbVRSamtSQmtacC9GUTJkS09HMS9zS0FJaEFQcFQ0WkRiaTNmV29TS\
+      FFDWWVmCkgwM0U2aVpvYXNGVFdJOGxkNlhyaWppcwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "rke2-imported-1"
+  user:
+    token: "kubeconfig-user-vvljzlxbrk:rscrq8fw54mv9sj92rbbnb2sn59ndh5jcgjgv6sj8dw2pgckqs82zm"
+
+
+contexts:
+- name: "rke2-imported-1"
+  context:
+    user: "rke2-imported-1"
+    cluster: "rke2-imported-1"
+
+current-context: "rke2-imported-1"
+
